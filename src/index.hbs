@@ -1,1 +1,91 @@
-Matt Born is a designer at Sprout Social.
+<style scoped>
+  .index {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .index-1,
+  .index-2,
+  .index-3,
+  .index-4,
+  .index-5,
+  .index-6,
+  .index-7,
+  .index-8,
+  .index-9 {
+    background: linear-gradient(to top right, #111, #222);
+    position: relative;
+  }
+  .index-1::before,
+  .index-2::before,
+  .index-3::before,
+  .index-4::before,
+  .index-5::before,
+  .index-6::before,
+  .index-7::before,
+  .index-8::before,
+  .index-9::before {
+    content: "";
+    display: block;
+  }
+  .index-1 { flex: 4 100%; }
+  .index-1::before { padding-top: 60%; }
+  .index-2,
+  .index-3,
+  .index-4,
+  .index-5,
+  .index-6 { flex: 1 25%; }
+  .index-2,
+  .index-3,
+  .index-4,
+  .index-5::before { padding-top: 20%; }
+  .index-7 { flex: 3 75%; }
+  .index-6,
+  .index-7::before { padding-top: 40%; }
+  .index-8,
+  .index-9 { flex: 2 50%; }
+  .index-8::before,
+  .index-9::before { padding-top: 100%; }
+  .index-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .index-credit { margin: 50px 0 30px; }
+  .mb-footer { margin: 30px 0 50px; }
+</style>
+
+<div class="index">
+  <div class="index-1">
+    <div class="index-content"></div>
+  </div>
+  <div class="index-2">
+    <div class="index-content"></div>
+  </div>
+  <div class="index-3">
+    <div class="index-content"></div>
+  </div>
+  <div class="index-4">
+    <div class="index-content"></div>
+  </div>
+  <div class="index-5">
+    <div class="index-content"></div>
+  </div>
+  <div class="index-6">
+    <div class="index-content"></div>
+  </div>
+  <div class="index-7">
+    <div class="index-content"></div>
+  </div>
+  <div class="index-8">
+    <div class="index-content"></div>
+  </div>
+  <div class="index-9">
+    <div class="index-content"></div>
+  </div>
+</div>
+
+<p class="index-credit">This layout was inspired by <a href="https://dribbble.com/shots/1987103-Incase-PCP-Pages" target="_blank">this Dribbble</a>.</p>
+
+<p class="mb-footer">All my work is handcrafted with heart in the Windy City.</p>

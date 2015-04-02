@@ -3,8 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>Matt Born</title>
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+      body {
+        max-width: 1000px;
+        color: #222;
+        font: 100%/1 "Open Sans", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        letter-spacing: .01em;
+        margin: 0 auto;
+        text-align: center;
+      }
+      a { color: #0ad; }
+      svg { fill: currentColor; }
+      .menu {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 30px;
+      }
+      .menu-a {
+        color: inherit;
+        flex: 1 auto;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 40px 0;
+        text-decoration: none;
+      }
+      .menu-a:hover,
+      .menu-mb:hover { color: #0ad; }
+      .menu-mb {
+        color: inherit;
+        flex: 1 auto;
+        margin: 25px 0;
+      }
+      .menu-mb-svg {
+        width: 80px;
+        height: 50px;
+      }
+    </style>
   </head>
   <body>
+    <div class="menu">
+      <a class="menu-a" href="/makes">Work</a>
+      <a class="menu-a" href="/writes">Blog</a>
+      <a class="menu-a" href="/about">About</a>
+      <a class="menu-mb" href="/">
+        <svg class="menu-mb-svg" viewBox="0 0 100 100">
+          <polygon opacity="0.5" points="0,78.9 16.7,50 33.3,21.1 50,50 66.7,78.9 33.3,78.9"></polygon>
+          <polygon opacity="0.8" points="33.3,78.9 50,50 66.7,21.1 83.3,50 100,78.9 66.7,78.9"></polygon>
+        </svg>
+      </a>
+      <a class="menu-a" href="/learn">Learn</a>
+      <a class="menu-a" href="/random">Mess</a>
+      <a class="menu-a" href="https://github.com/mattborn" target="_blank">Github</a>
+    </div>
     {{> body}}
   </body>
 </html>
