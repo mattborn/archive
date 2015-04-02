@@ -1,6 +1,8 @@
 <style scoped>
   .index {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
   }
   .index-1,
@@ -27,22 +29,34 @@
     content: "";
     display: block;
   }
-  .index-1 { flex: 4 100%; }
+  .index-1 {
+    -webkit-flex: 4 100%;
+    flex: 4 100%;
+  }
   .index-1::before { padding-top: 60%; }
   .index-2,
   .index-3,
   .index-4,
   .index-5,
-  .index-6 { flex: 1 25%; }
+  .index-6 {
+    -webkit-flex: 1 25%;
+    flex: 1 25%;
+  }
   .index-2,
   .index-3,
   .index-4,
   .index-5::before { padding-top: 20%; }
-  .index-7 { flex: 3 75%; }
+  .index-7 {
+    -webkit-flex: 3 75%;
+    flex: 3 75%;
+  }
   .index-6,
   .index-7::before { padding-top: 40%; }
   .index-8,
-  .index-9 { flex: 2 50%; }
+  .index-9 {
+    -webkit-flex: 2 50%;
+    flex: 2 50%;
+  }
   .index-8::before,
   .index-9::before { padding-top: 100%; }
   .index-content {

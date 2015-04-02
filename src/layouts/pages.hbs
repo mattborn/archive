@@ -5,6 +5,7 @@
     <title>Matt Born</title>
     <style>
       @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+      * { box-sizing: border-box; }
       body {
         max-width: 1000px;
         color: #222;
@@ -17,12 +18,15 @@
       a { color: #0ad; }
       svg { fill: currentColor; }
       .menu {
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
         padding: 0 30px;
       }
       .menu-a {
         color: inherit;
+        -webkit-flex: 1 auto;
         flex: 1 auto;
         font-size: 15px;
         font-weight: 600;
@@ -34,6 +38,7 @@
       .menu-mb:hover { color: #0ad; }
       .menu-mb {
         color: inherit;
+        -webkit-flex: 1 auto;
         flex: 1 auto;
         margin: 25px 0;
       }
