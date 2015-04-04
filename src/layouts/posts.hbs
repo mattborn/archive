@@ -9,9 +9,13 @@
       max-width: 720px;
       margin: 50px auto;
     }
+    img { max-width: 100%; }
+    .title {}
     </style>
   </head>
   <body class="markdown-body">
+    <h1 class="title">{{title}}</h1>
+    <time class="date" pubdate="{{date}}">{{date}}</time>
     {{#markdown}}
       {{> body}}
     {{/markdown}}
