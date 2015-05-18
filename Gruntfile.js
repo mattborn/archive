@@ -47,6 +47,7 @@ module.exports = function (grunt) {
             dest: 'build',
             expand: true,
             src: [
+              'CNAME',
               'LICENSE',
               'README.md'
             ]
