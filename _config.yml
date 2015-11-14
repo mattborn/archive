@@ -8,4 +8,9 @@ twitter_username: matthewcyan
 github_username: mattborn
 
 # Build settings
+collections:
+  pages:
+    output: true
+    permalink: /:title
 markdown: kramdown
+permalink: /writes/:title

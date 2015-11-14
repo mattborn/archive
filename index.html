@@ -1,4 +1,17 @@
 ---
 layout: default
+styles: index
 ---
-<h1>{{ site.title }}</h1>
+<section class="index-section">
+  <div class="inner">
+    <h2 class="index-heading">Web Designer<br>&amp; Mentor</h2>
+    <img class="index-selfie" src="https://pbs.twimg.com/profile_images/514181657071329281/ICYrL70x_400x400.jpeg">
+    <p class="index-text">{{ page.title }} Hey, my name’s Matt and I live in Chicago with my wife Megan &amp; daughter Maely. I started creating for the web <span class="started"></span> and I never stopped. Let’s grab a beer sometime. Cheers!</p>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<script>
+(function(){
+  document.querySelector('.started').innerHTML = moment('1999-01-01').fromNow();
+})();
+</script>
