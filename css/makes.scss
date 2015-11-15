@@ -1,0 +1,20 @@
+---
+---
+.makes {
+  &-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: 100px;
+  }
+  &-title {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+}
+
+.redemption .makes-hero {
+  background-color: #222;
+  background-image: url(http://mattborn.s3.amazonaws.com/assets/redemption-1.png);
+}
