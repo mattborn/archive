@@ -1,23 +1,17 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+<p class="front-intro">This is the Front Page of Air, an ultra-minimalist Jekyll theme by Matt Born inspired by <a href="https://ia.net">Information Architects</a>.</p>
+<div class="clear">
+  <nav class="blog-menu" role="navigation">
+    <a href="#">Menu</a>
+    <a href="#">Items</a>
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe</a>
+  </nav>
+  <div class="blog-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}">More</a></p>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  </div>
 </div>
