@@ -1,0 +1,7 @@
+---
+layout: list
+---
+{% for post in site.posts %}
+  <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+  <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}">More</a></p>
+{% endfor %}

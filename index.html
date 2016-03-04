@@ -1,24 +1,17 @@
 ---
-layout: default
+layout: list
 ---
-<p class="front-intro">Hey! My name’s Matt and I live in West Loop, Chicago with my wife <a href="http://meganborn.com">Megan</a> and daughter <a href="http://mattmeg.com/maely">Maely</a>. I started creating for the web <span class="started"></span> and I never stopped. Let’s grab a beer sometime. I like IPAs. Cheers!</p>
-<div class="clear">
-  <nav class="blog-menu" role="navigation">
-    <a href="#">Menu</a>
-    <a href="#">Items</a>
-    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe</a>
-  </nav>
-  <div class="blog-list">
-    {% for post in site.posts %}
-      <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-      <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}">More</a></p>
-    {% endfor %}
-  </div>
-</div>
+<h3><a href="/makes/bambu">Bambu</a></h3>
+<p>Bambu is a web-based, communications and employee advocacy platform for large organizations. I work on this every day at Sprout Social. <a href="/makes/bambu">More</a></p>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-<script>
-(function(){
-  document.querySelector('.started').innerHTML = moment('1999-01-01').fromNow();
-})();
-</script>
+<h3><a href="/makes/sprout">Sprout Social</a></h3>
+<p>Sprout is a web-based, social media management platform for organizations of all types and sizes. I have been working here since 2012. <a href="/makes/sprout">More</a></p>
+
+<h3><a href="/makes/redemption">Redemption</a></h3>
+<p>Redemption is a Christian church in Arlington Heights, Illinois that my wife and I have attended since 2009. During that time, I have served as lead designer for all digital and print communications. <a href="/makes/redemption">More</a></p>
+
+<h3><a href="/makes/bbr">Brown Baby Reads</a></h3>
+<p>In May 2015, ten of us from Sprout participated in the Nerdery Overnight Challenge to build a free website for a nonprofit in 24 hours. This is what we made. <a href="/makes/bbr">More</a></p>
+
+<h3><a href="/makes/paper-tower">Paper Tower</a></h3>
+<p>Before Sprout, I worked for a small WordPress development agency based in Elgin, Illinois. These are a few of the websites I helped build. <a href="/makes/paper-tower">More</a></p>

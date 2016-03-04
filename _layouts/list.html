@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<p class="front-intro">Hey! My name’s Matt and I live in West Loop, Chicago with my wife <a href="http://meganborn.com">Megan</a> and daughter <a href="http://mattmeg.com/maely">Maely</a>. I started creating for the web <span class="started"></span> and I never stopped. Let’s grab a beer sometime. I like IPAs. Cheers!</p>
+<div class="clear">
+  <nav class="blog-menu" role="navigation">
+    <a href="/">Work</a>
+    <a href="/about">About</a>
+    <a href="/writes">Blog</a>
+  </nav>
+  <div class="blog-list">
+    {{ content }}
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<script>
+(function(){
+  document.querySelector('.started').innerHTML = moment('1999-01-01').fromNow();
+})();
+</script>
