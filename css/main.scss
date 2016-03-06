@@ -21,6 +21,11 @@ a {
 }
 a:hover { opacity: .5; }
 
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
 h1,
 h2,
 h3 {
