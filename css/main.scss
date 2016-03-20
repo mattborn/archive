@@ -103,14 +103,29 @@ footer nav {
 }
 
 .post h1 {
-  margin: 0;
+  margin: 0 0 1.7em;
   text-transform: uppercase;
 }
 .post h2 {
+  margin: 0 0 1.7em;
   text-align: center;
 }
 .post time {
   display: block;
   font-style: italic;
   margin-bottom: 1.7em;
+}
+
+.video {
+  height: 0;
+  margin-bottom: 1.7em;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.video iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
