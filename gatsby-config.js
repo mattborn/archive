@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'MB',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,5 +17,15 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-68943742-1',
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        cookieDomain: 'mattborn.com',
+      },
+    },
   ],
 }

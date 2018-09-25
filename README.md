@@ -4,6 +4,7 @@
 ## Ideas
 
 - [x] Coming soon…
+- [x] Gatsby
 - [ ] Planting seeds & watching them grow
 - [ ] Employment rider
 - [ ] Visual decay
